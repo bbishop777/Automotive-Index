@@ -23,3 +23,14 @@ SELECT DISTINCT make_title FROM car_models WHERE make_code LIKE '%LAM%';
 
 SELECT DISTINCT model_title FROM car_models WHERE make_code= 'NISSAN' AND model_code= 'GT-R';
 -- timing took 21.356 ms
+
+SELECT make_code, model_code, model_title, year FROM car_models WHERE make_code= 'LAM';
+-- timing took 21.652 ms
+
+SELECT count(*) FROM car_models WHERE make_code= 'LAM';
+SELECT * FROM car_models WHERE year BETWEEN 2010 AND 2015;
+-- timing took 61.986 ms
+SELECT count(*) FROM car_models WHERE year BETWEEN 2010 AND 2015;
+
+
+-- // index
