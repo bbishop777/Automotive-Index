@@ -32,5 +32,8 @@ SELECT * FROM car_models WHERE year BETWEEN 2010 AND 2015;
 -- timing took 61.986 ms
 SELECT count(*) FROM car_models WHERE year BETWEEN 2010 AND 2015;
 
+SELECT * FROM car_models WHERE year= 2010;
+-- timing took 31.176 ms
+
 
 -- // index
